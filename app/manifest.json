@@ -1,0 +1,19 @@
+{
+  "name": "Task Timer",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "A simple task timer",
+  "icons": {
+    "16": "img/icon.png",
+    "48": "img/icon.png",
+    "128": "img/icon.png"
+  },
+  "permissions": ["activeTab"],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  },
+  "browser_action": {
+    "default_popup": "popup.html"
+  }
+}

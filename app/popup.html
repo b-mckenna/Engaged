@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Task Timer</title>
+  <script src="popup.js"></script>
+</head>
+<body>
+  <h1>Task Timer</h1>
+  <label for="task">Task:</label>
+  <input type="text" id="task" name="task"><br><br>
+  <label for="duration">Duration:</label><br>
+  <input type="radio" id="1" name="duration" value="10"> 10 seconds<br>
+  <input type="radio" id="15" name="duration" value="900"> 15 minutes<br>
+  <input type="radio" id="30" name="duration" value="1800"> 30 minutes<br>
+  <input type="radio" id="45" name="duration" value="2700"> 45 minutes<br>
+  <input type="radio" id="60" name="duration" value="3600"> 60 minutes<br>
+  <input type="radio" id="90" name="duration" value="5400"> 90 minutes<br>
+  <input type="radio" id="180" name="duration" value="10800"> 180 minutes<br><br>
+  <button id="start">Start</button>
+  <div id="timer" style="display:none;"></div>
+</body>
+</html>
