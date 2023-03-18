@@ -1,22 +1,27 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Task Timer</title>
-  <script src="popup.js"></script>
-</head>
-<body>
-  <h1>Engaged</h1>
-  <label for="task">Task:</label>
-  <input type="text" id="task" name="task"><br><br>
-  <label for="duration">Duration:</label><br>
-  <input type="radio" id="1" name="duration" value="10"> 10 seconds<br>
-  <input type="radio" id="15" name="duration" value="900"> 15 minutes<br>
-  <input type="radio" id="30" name="duration" value="1800"> 30 minutes<br>
-  <input type="radio" id="45" name="duration" value="2700"> 45 minutes<br>
-  <input type="radio" id="60" name="duration" value="3600"> 60 minutes<br>
-  <input type="radio" id="90" name="duration" value="5400"> 90 minutes<br>
-  <input type="radio" id="180" name="duration" value="10800"> 180 minutes<br><br>
-  <button id="start">Start</button>
-  <div id="timer" style="display:none;"></div>
-</body>
+  <head>
+    <title>Engagement Tracker</title>
+    <script src="popup.js"></script>
+    <link rel="stylesheet" type="text/css" href="popup.css">
+  </head>
+  <body>
+    <h1>Track Engagement</h1>
+    <label for="task">Task:</label>
+    <input type="text" id="task" name="task"><br><br>
+    <label for="duration">Duration:</label><br>
+    <input type="radio" id="fifteen" name="duration" value="900"> 15 minutes<br>
+    <input type="radio" id="thirty" name="duration" value="1800"> 30 minutes<br>
+    <input type="radio" id="ninety" name="duration" value="5400"> 90 minutes<br>
+    <div class="engagement_button">
+      <button id="engaged">Engaged</button>
+      <button id="n-engaged">Not Engaged</button>
+    </div>
+    <div class="energy_button">
+      <button id="Energized">Energized</button>
+      <button id="n-energized">Not Energized</button>
+    </div>
+    <button id="start">Start</button>
+    <div id="timer" style="display:none;"></div>
+  </body>
 </html>
